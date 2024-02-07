@@ -1,0 +1,70 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto) 1fr;
+  gap: 20px;
+  place-items: start;
+  /* place item start faz ele parar de querer expandir o elemento; */
+}
+
+.imagem {
+  grid-column: 1;
+  grid-row: 2/5;
+  /* row seria as linhas, da linha 2 a 5 */
+}
+
+.texto {
+  grid-column: 2;
+  background-color: #eee;
+}
+
+.preco {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  text-align: center;
+}
+
+.titulo {
+  grid-column: 1/-1;
+}
+/* Estilos gerais */
+body {
+  font-family: arial;
+  margin: 40px;
+}
+
+h1,
+p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.comprar {
+  text-decoration: none;
+  background-color: #a8f;
+  color: rgb(20, 1, 58);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.preco {
+  background-color: #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+}

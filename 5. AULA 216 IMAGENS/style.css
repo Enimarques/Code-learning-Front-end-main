@@ -1,0 +1,12 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+/* max width em 100 se alinha ao limite do pai, o pai é o body pois esta dentro de body
+se eu colocasse ela dentro de uma div, e a div tivesse 200px, seguiria o pai (div) */
+
+/* coloca o display block para que nao fique margem nas imagens. ela tem uma margem padrão de 4px */
+
+div {
+  width: 300px;
+}

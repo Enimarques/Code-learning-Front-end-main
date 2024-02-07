@@ -1,0 +1,51 @@
+a {
+  color: red;
+  text-decoration: none;
+  /* nesse caso o decoration tirou o sublinhado */
+}
+
+a {
+  font-size: 32px;
+  color: brown;
+}
+/* posso colocar junto ou criar esse efeito cascata, quem vem por ultimo manda */
+
+/* Eu posso referenciar mais de um ao menos tempo, separando com virgulas */
+a,
+p {
+  font-size: 20px;
+  color: brown;
+}
+
+p a {
+  color: red;
+}
+/* Para todo "a" dentro de "p" faça isso.... 
+Lembrando que só se aplica ao "a", não ao p. Poderia fazer algo maior como : 
+body p a "todo a dentro de p dentro de body*/
+
+#titulo {
+  color: gold;
+}
+/* para referenciar uma id é só usar #, geralmente nao usamos os atributos p,a,h1.... usamos classes e id para nao bagunçar o css */
+
+.codigo {
+  color: red;
+}
+
+.design {
+  color: blue;
+}
+/* da mesma forma eu posso colocar uma classe dentro de outra, referenciar elas iguais os atributos. */
+
+.roxo {
+  color: purple;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.grande {
+  font-size: 32px;
+}

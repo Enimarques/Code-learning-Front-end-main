@@ -1,0 +1,34 @@
+h1 {
+  background: #84e;
+  color: rgba(255, 9, 46, 0.7);
+}
+/* `Posso usar 3 formas de cores:
+1- por nome
+2- por codigo hexadecimal (0 a f)
+3- por rgb (0 a 255) 
+e ainda tem o rgba (O A É A TRANSPARENCIA DE 0 A 1)*/
+
+div {
+  background-color: #84e;
+  width: 120px;
+  height: 30px;
+  padding: 10px;
+  border: 20px solid #111;
+  margin: 15px;
+}
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  padding: 20px;
+  border: 5px solid #111;
+  margin: 30px;
+}
+/* a margens nao somam, a maior se sobressai sobre a outra */
+
+a{
+  color: inherit;
+}
+/* inherit seria pegar da herança, alguns atributos tem valores pre definidos, inherit manda ele ao inves de usar o seu pre definido, usar o do pai(atributo na qual o outro atributo esta dentro  */
