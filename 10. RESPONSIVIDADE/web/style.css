@@ -1,0 +1,45 @@
+img {
+  max-width: 100%;
+  /* só de colocar ela em max width de 100 ja torna ela responsiva */
+  display: block;
+  /* display block permite que altere altura e largura, alem de colocar ela separada pegando toda a largura e tirando os espaços em branco */
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* por estar em 1fr, ele fica responsivo, muda de acordo com o tamanho */
+}
+
+h1 {
+  grid-column: 1/-1;
+  /* pega de ponta a ponta; */
+}
+
+/* media querie para colocar CONDIÇÃO! o que esta entre parentese é a CONDIÇÃO A SER RESPEITADA. Ou seja, nesse caso, se tiver abaixo de 600px então ELA EXECUTA. */
+/* max-width- menor que e min width- maior que */
+@media (max-width: 600px) {
+  /* aqui coloco o que eu quero q aconteça se bater a condição */
+  div {
+    grid-template-columns: 1fr;
+    /* imagem menor que 600px então cai pra apenas 1fr */
+  }
+  h1 {
+    background-color: lightpink;
+  }
+}
+
+/* acima de 1000px */
+@media (min-width: 1000px) {
+  html {
+    font-size: 150%;
+  }
+}
+
+/* entre 800px e 900px */
+@media (min-width: 800px) and (max-width: 900px) {
+  h1 {
+    background: lightgreen;
+  }
+}
