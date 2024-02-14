@@ -40,18 +40,35 @@ a {
   justify-content: center;
 }
 
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+
 .links a {
   background-color: #ffffff;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   color: black;
   padding: 0.9375rem 1.875rem;
+  border: 0.1rem solid transparent;
 }
+
+.links a:hover {
+  border-color: #ee2211;
+}
+
 .titulo1 {
   /* Estilos específicos para a imagem com a classe "titulo1" */
   max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
   display: block; /* Para alinhar corretamente a imagem */
   margin: 0 auto; /* Centraliza a imagem horizontalmente */
   margin-bottom: 3.75rem;
+}
+
+.titulo2 {
+  background-image: url("/9.refazendo exercicio melhorado/img/onda.svg");
 }
 
 .conteudo {
@@ -72,7 +89,8 @@ a {
   gap: 1.25rem;
 }
 
-.detalhe {
+.detalhe::after {
+  content: "";
   width: 3.75rem;
   height: 0.25rem;
   background-color: #ee2211;
@@ -80,12 +98,17 @@ a {
   top: 1.875rem;
   right: -1.875rem;
 }
+
 .ver-mais {
   background-color: #ee2211;
   border-radius: 0.25rem;
   color: white;
   padding: 0.9rem 1.875rem;
   align-content: right;
+}
+
+.ver-mais:hover {
+  background-color: #900;
 }
 
 .titulo2 {
@@ -102,6 +125,10 @@ a {
   padding: 2.5rem;
 }
 
+.vantagens div:nth-child(odd) {
+  background: #f7f7f7;
+}
+
 .motor-texto,
 .velocidade-texto,
 .rastreador-texto {
@@ -110,7 +137,14 @@ a {
   /* primeiro auto para ele pegar os icones e deixar no tamanho dele mesmo */
   gap: 0.6rem 1.25rem;
   /* primeiro gap é linha e segundo é coluna */
-  padding: 1.0.25rem;
+  padding: 1.25rem;
+}
+
+.motor-texto:hover,
+.velocidade-texto:hover,
+.rastreador-texto:hover {
+  border-left: 0.2rem solid;
+  border-color: #ee2211;
 }
 
 .velocidade-texto p,

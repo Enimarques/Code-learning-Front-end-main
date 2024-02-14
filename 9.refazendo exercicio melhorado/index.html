@@ -11,18 +11,20 @@
   <header>
     <img class="titulo1" src="/9.refazendo exercicio melhorado/img/bikcraft.svg" alt="bikcraft">
 
-    <nav class="links">
-      <a href="\">SOBRE</a>
-      <a href="\">PRODUTOS</a>
-      <a href="\">LOJAS</a>
-      <a href="\">CONTATO</a>
+    <nav>
+      <ul class="links">
+        <li><a href="\">SOBRE</a></li>
+        <li><a href="\">PRODUTOS</a></li>
+        <li><a href="\">LOJAS</a></li>
+        <li><a href="\">CONTATO</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="conteudo">
-    <section aria-label="Descrição da marca" class="texto-bike">
-      <span class="detalhe"></span>
-      <h2>Bicicletas Feitas a Mão</h2>
+    <section aria-labelledby="label introdução" class="texto-bike">
+      <!-- <span class="detalhe"></span> -->
+      <h2 class="detalhe" id="label introdução">Bicicletas Feitas a Mão</h2>
       <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
       <a class="ver-mais" href="\">VER MAIS</a>
     </section>
@@ -31,8 +33,8 @@
 
     <h1 class="titulo2">VANTAGENS BIKCRAFT</h1>
     <!-- não consegui colocar o section aqui por que desconfigurou -->
-    <section aria-label="Vantagens Bikcraft">
-      <div class="vantagens">
+    <section aria-labelledby="label vantagens">
+      <div class="vantagens" id="label vantagens">
         <div class="motor-texto">
           <img src="/9.refazendo exercicio melhorado/img/eletrica.svg" alt="">
           <h2>Motor elétrico</h2>
