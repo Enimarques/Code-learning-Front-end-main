@@ -84,7 +84,7 @@ p {
 }
 
 .introducao::before {
-  content: '';
+  content: "";
   width: 60px;
   height: 4px;
   background: #e21;
@@ -112,7 +112,7 @@ p {
   text-align: right;
   padding: 40px;
   align-self: center;
-  background-image: url('./img/onda.svg');
+  background-image: url("./img/onda.svg");
 }
 
 .vantagens {
@@ -146,4 +146,81 @@ p {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+
+/* RESPONSIVIDADE */
+.introducao p {
+  max-width: 40ch;
+}
+
+.vantagens-item p {
+  max-width: 30ch;
+}
+
+/* alterar questão da imagem e texto */
+@media (max-width: 900px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  body {
+    gap: 20px;
+  }
+
+  .header {
+    gap: 20px;
+  }
+
+  .conteudo img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
+  }
+}
+
+/* começa o scroll */
+@media (max-width: 750px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .introducao {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+
+  .introducao::before {
+    display: none;
+  }
+
+  /* body {
+    overflow-x: hidden;
+  } */
+}
+
+/* mais um break de celular  o scroll 500px*/
+@media (max-width: 500px) {
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
+
+/* mais um break de celular  o scroll 500px*/
+@media (max-width: 400px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+
+  .vantagens h3,
+  .vantagens p {
+    font-size: 1rem;
+  }
 }
