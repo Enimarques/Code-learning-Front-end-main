@@ -1,18 +1,26 @@
-.background{
+.background {
   background-color: aqua;
-  background-image: url('/img/bicicleta.jpg');
+  background-image: url("/8.background/img/bicicleta.jpg");
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-  .gradiente-linear {
-    background-image: linear-gradient(to right, #009638, #f6d800, #062672);
-    /* posso indicar o sentido do gradiente, to right, to left, 45deg para graus. posso dizer onde cada cor começa tipo green 20%... */
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #caf;
+}
+
+.gradiente-linear {
+  background-image: linear-gradient(to right, #009638, #f6d800, #062672);
+  /* posso indicar o sentido do gradiente, to right, to left, 45deg para graus. posso dizer onde cada cor começa tipo green 20%... */
   height: 200px;
-  }
-  
-  .gradiente-radial {
-    background-image: radial-gradient(circle, #009638, #f6d800, #062672);
+}
+
+.gradiente-radial {
+  background-image: radial-gradient(circle, #009638, #f6d800, #062672);
   height: 200px;
-  }
+}
