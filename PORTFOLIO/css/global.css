@@ -3,7 +3,7 @@ body{
  /* links nao herdam essa letra, tem que colcoar indidual */
   margin: 0px;
   color: #141414;
-
+  margin-bottom: 1000px;
 }
 
 h1,
@@ -22,4 +22,13 @@ ul{
 img {
   max-width: 100%;
   display: block;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+  /* 4 ch é que quero no maximo 4 letras do lado uma da outra */
 }

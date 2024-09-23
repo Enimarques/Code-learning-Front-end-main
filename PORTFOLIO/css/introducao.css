@@ -9,9 +9,11 @@
   align-items: center;
 }
 
+
 .introducao h1{
   font-size: 4.5rem;
   line-height: 1.125;
+  /* Line height é uma multiplicação em relação ao font size */
   margin-bottom: 30px;
   position: relative;
 }
@@ -26,6 +28,7 @@
   top: -15px;
   left: -40px;
   z-index: -1;
+  /* z index pra jogar elemento pra tras */
 }
 
 .introducao p {
