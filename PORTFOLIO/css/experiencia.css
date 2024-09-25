@@ -86,3 +86,37 @@ color: #e0e0e0;
   background: #ffffff;
   padding: 5px 10px;
 }
+
+@media (max-width: 800px){
+  .experiencia{
+    grid-template-columns: 1fr;
+    gap: 40px ;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+
+  .experiencia-texto {
+font-size: 1.25rem;
+  }
+
+  .empresa-ano{
+    position: initial;
+    order: 1;
+    /* como todos nao tem posicao, entao sao 0, qualquer um que for 1 é o ultimo */
+    width: initial;
+    text-align: left;
+  }
+
+  .empresa-ano::before {
+    content: "Ano: ";
+    /* só entra quando for pequeno e nao aparece na leitura */
+  }
+}
+
+
+@media (max-width: 400px){
+  .empresa{
+    grid-template-columns: 1fr;
+  }
+}
