@@ -1,0 +1,105 @@
+.formacao {
+  background: #141414;
+  color: #ffffff;
+}
+
+.formacao .subtitulo {
+  color: #000000;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  /* max de 40 caracteres, pra nao passar do que quero em largura */
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: #ffffff ;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.faculdade-unidade{
+  flex: 1;
+  background: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+/* coloco o display pra colocar o margin, e coloco column pra continuar lado a lado. */
+} 
+
+.faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+  /* se eu colocar só isso sem mudar o display pro flex no faculdade-unidade, nao applica. */
+}
+
+.faculdade-curso {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+  /* por que quero criar o detalhe novamente */
+  flex: 1;
+  /* coloco esse flex 1 para que o item pegue todo espaço dado a ele e fique alinhado com os outros */
+}
+
+.faculdade-curso::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(#b6f829, #67dd0a);
+  left: -24px;
+}
+
+.faculdade-instituicao {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.formacao-extra h3{
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+  /* por que vou ter outros icons */
+}
+
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.cursos h3::before{
+  background: url("../css/07-projeto-portfolio/0709-formacao-css/portfolio/img/cursos.svg");
+}
+
+
+.idiomas h3::before{
+  background: url("../css/07-projeto-portfolio/0709-formacao-css/portfolio/img/idiomas.svg");
+}

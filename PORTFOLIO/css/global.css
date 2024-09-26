@@ -24,6 +24,20 @@ img {
   display: block;
 }
 
+/* aplicar primeiro a classe container que é a base pra varios estilos */
+.container {
+  max-width: 1200px;
+  padding: 40px 20px; 
+  /* 40 cima baixo, 20 lado e outro */
+  margin: 0 auto;
+  display: grid;
+  /* grid é de colunas */
+  grid-template-columns: 1fr 2fr;
+  /* 1 terço da tela de um lado, e 2 terços do outro */
+  gap: 100px;
+}
+
+
 .subtitulo {
   font-size: 8rem;
   line-height: 1;
