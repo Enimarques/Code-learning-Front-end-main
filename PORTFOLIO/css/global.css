@@ -3,7 +3,8 @@ body{
  /* links nao herdam essa letra, tem que colcoar indidual */
   margin: 0px;
   color: #141414;
-  margin-bottom: 1000px;
+  /* margin-bottom: 1000px; 
+  ele só existia pra facilitar mexer no final do html*/
 }
 
 h1,
@@ -27,7 +28,7 @@ img {
 /* aplicar primeiro a classe container que é a base pra varios estilos */
 .container {
   max-width: 1200px;
-  padding: 40px 20px; 
+  padding: 120px 20px; 
   /* 40 cima baixo, 20 lado e outro */
   margin: 0 auto;
   display: grid;
@@ -51,6 +52,6 @@ img {
   .subtitulo{
     font-size: 3rem;
     text-transform: capitalize;
-    max-width: initial;
+    max-width: initial !important;
   }
 }

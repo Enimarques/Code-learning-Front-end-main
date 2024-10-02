@@ -3,8 +3,25 @@
   color: #ffffff;
 }
 
+.formacao .container{
+  position: relative;
+  padding: 120px 20px;
+}
+
+.formacao .container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url('../css/07-projeto-portfolio/0710-footer/portfolio/img/detalhe.svg') no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
 .formacao .subtitulo {
   color: #000000;
+  max-width: 5ch;
 }
 
 .formacao-texto {
@@ -70,9 +87,8 @@
   color: #a3a3a3;
 }
 
-
-.cursos {
-  margin-bottom: 60px;
+.idiomas{
+  margin-top: 60px;
 }
 
 .formacao-extra h3{
@@ -83,6 +99,7 @@
   margin-bottom: 30px;
   position: relative;
   /* por que vou ter outros icons */
+
 }
 
 .formacao-extra h3::before {
@@ -103,3 +120,45 @@
 .idiomas h3::before{
   background: url("../css/07-projeto-portfolio/0709-formacao-css/portfolio/img/idiomas.svg");
 }
+
+.formacao-extra li{
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span{
+  color: #8f8f8f;
+}
+
+.cursos li{
+  display: flex;
+  justify-content: space-between;
+  /* ISSO AQUI PRA COLOCAR LA NO CANTO SEPARANDO DO OUTRO CONTEUDO */
+}
+
+.idiomas li{
+  display: block;
+}
+
+@media (max-width: 800px){
+  .container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+    .formacao .subtitulo{
+     color: #ffffff;
+    }
+
+    .formacao-texto {
+      font-size: 1.25rem;
+    }
+
+    .formacao-extra h3::before{
+      position: initial;
+      /* faço isso por que os icones estavam cortando quando diminuia a tela. Agora joga pra cima */
+      margin-bottom: 10px;
+    }
+}
+
